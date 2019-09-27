@@ -1,0 +1,74 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha(){
+
+		document.write("<br><br>");
+
+	}
+
+	function escreve(frase){
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	var limite = parseInt(prompt("Entre com a data limite"));
+
+	var anoCopa = 1930;
+
+	while(anoCopa <= limite){
+		if(anoCopa != 1942 && anoCopa != 1946) {
+
+			if (anoCopa == 1958 || anoCopa == 1962 || anoCopa == 1970 || anoCopa == 1994 || anoCopa || 2002){
+				var campeao = "o Brasil";
+			}
+
+			if (anoCopa == 1954 || anoCopa == 1974 || anoCopa == 1990 || anoCopa == 2014){
+				var campeao = "a Alemanha";
+			}
+
+			if (anoCopa == 1934 || anoCopa == 1938 || anoCopa == 1982 || anoCopa == 2006){
+				var campeao = "a Italia";
+			}
+
+			if (anoCopa == 1978 || anoCopa == 1986){
+				var campeao = "a Argentina";
+			}
+
+			if (anoCopa == 1930 || anoCopa == 1950){
+				var campeao = "o Uruguai";
+			}
+
+			if (anoCopa == 1998 || anoCopa == 2018){
+				var campeao = "a França";
+			}
+
+			if (anoCopa == 1966){
+				var campeao = "a Inglaterra";
+			}
+
+			if (anoCopa == 2010){
+				var campeao = "a Espanha";
+			}
+
+			if (anoCopa > 2019){
+				var campeao = "não definido"
+			}
+
+    		escreve("Teve copa em " + anoCopa + " e o campeão foi " + campeao);
+    	}
+
+    	else{
+    		escreve("Em " + anoCopa + " não teve copa devido a segunda guerra mundial");
+    	}
+
+    	anoCopa = anoCopa + 4;
+
+	}
+
+	escreve("FIM");
+
+</script>

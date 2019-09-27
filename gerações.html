@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha(){
+
+		document.write("<br>");
+
+	}
+
+	function escreve(frase){
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+
+	var anoAtual = 2019;
+	var mediaGeracao = 28;
+	var anosPassaram = anoAtual - 1500;
+	var geracaoPassaram = anosPassaram/mediaGeracao;
+
+	escreve("Se passaram " + Math.round(geracaoPassaram) + " Gerações");
+
+</script>
